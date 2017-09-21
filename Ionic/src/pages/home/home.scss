@@ -1,0 +1,10 @@
+page-home {
+
+    .tabs-md .tab-button[aria-selected=true] {
+        color:#32CD32 !important;
+    }
+
+    .tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+        color:#32CD32 !important;
+    }
+}

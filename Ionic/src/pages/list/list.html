@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>List</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-card *ngFor="let estacionamento of estacionamentos">
+    <ion-card-content>
+      <div>{{estacionamento.Nome}}</div>
+      <div>Horario: {{estacionamento.HorarioFunc}} - Vagas Livres: {{estacionamento.QuantVagas}}</div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

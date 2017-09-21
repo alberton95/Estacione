@@ -1,0 +1,31 @@
+<head>
+  <meta charset="UTF-8">
+</head>
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{estacionamento.Nome}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="card-background-page">
+
+  <ion-card>
+    <img src='{{estacionamento.Img}}'/>
+    <div class="card-title">{{estacionamento.QuantVagas}} Vagas Livres</div>
+    <div class="card-subtitle">R${{estacionamento.Valor}}.00</div>
+  </ion-card>
+
+  <ion-card>
+    <div class="teste">Horario de Funcionamento</div>
+    <div class="teste">{{estacionamento.HorarioFunc}}</div>
+  </ion-card>
+
+  <ion-card>
+    <div class="teste">Endereço</div>
+    <div class="teste">Bairro: {{estacionamento.Endereco.Bairro}}</div>
+    <div class="teste">Rua: {{estacionamento.Endereco.Rua}}</div>
+  </ion-card>
+
+</ion-content>
